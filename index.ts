@@ -4,6 +4,8 @@ import { of, map, Observable } from 'rxjs';
 
 of('World')
   .pipe(map((name) => `Hello, ${name}!`))
-  .subscribe(console.log);
+  .subscribe((data) => {
+    console.log('data : ', data);
+  });
 
 // Open the console in the bottom right to see results.
